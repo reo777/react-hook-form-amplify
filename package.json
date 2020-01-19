@@ -13,6 +13,7 @@
     "aws-amplify": "^2.2.2",
     "blend-promise-utils": "^1.24.1",
     "classnames": "^2.2.6",
+    "faker": "^4.1.0",
     "formik": "^2.1.2",
     "immer": "^5.3.2",
     "lodash": "^4.17.15",
@@ -39,6 +40,7 @@
     "semantic-ui-react": "^0.88.2",
     "store": "^2.0.12",
     "typescript": "^3.7.5",
+    "uuid": "^3.4.0",
     "yup": "^0.28.0"
   },
   "scripts": {

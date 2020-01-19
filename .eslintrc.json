@@ -1,0 +1,49 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:prettier/recommended",
+    "prettier/react"
+  ],
+  "plugins": ["react", "react-hooks", "@typescript-eslint", "jest"],
+  "parser": "@typescript-eslint/parser",
+  "env": {
+    "es6": true,
+    "browser": true,
+    "node": true,
+    "jest/globals": true
+  },
+  "globals": {
+    "__static": true
+  },
+  "parserOptions": {
+    "version": 2019,
+    "sourceType": "module",
+    "project": "./tsconfig.json",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "rules": {
+    "no-unused-vars": 0,
+    "object-shorthand": [2, "always"],
+    "no-console": [
+      1,
+      {
+        "allow": ["warn", "error", "info"]
+      }
+    ],
+    "react/prop-types": 0,
+    "react/display-name": 0,
+    "react-hooks/rules-of-hooks": 2,
+    "react-hooks/exhaustive-deps": 2,
+    "@typescript-eslint/no-unused-vars": 1,
+    "@typescript-eslint/adjacent-overload-signatures": 2
+  },
+  "settings": {
+    "react": {
+      "pragma": "React",
+      "version": "detect"
+    }
+  }
+}

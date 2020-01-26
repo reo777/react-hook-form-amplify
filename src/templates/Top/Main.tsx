@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {Input, Button} from 'semantic-ui-react';
+import {Switch, Button, Input} from 'antd';
 import {useForm, Controller} from 'react-hook-form';
 import {Field, Formik} from 'formik';
 import {Auth} from 'aws-amplify';
@@ -40,33 +40,32 @@ const Form = () => {
               />
             </div>
 
-            <Button type="submit">Submit</Button>
-            <button
-              type="button"
+            <Button shape="round">Submit</Button>
+            <Button
+              type="dashed"
+              shape="round"
               onClick={() => {
                 reset(defaultValues);
               }}
             >
               Reset
-            </button>
-            <button
-              type="button"
+            </Button>
+            <Button
               onClick={() => {
                 Auth.signOut();
               }}
             >
               signOut
-            </button>
+            </Button>
           </form>
         </div>
       </Animated>
-      <Button
+
+      <Switch
         onClick={() => {
           setIsVisible(!isVisible);
         }}
-      >
-        toggle
-      </Button>
+      />
     </div>
   );
 };

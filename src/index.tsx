@@ -6,7 +6,8 @@ import {authConfig} from './config/env';
 import ScrollToTop from 'react-router-scroll-top';
 import {Provider} from 'react-redux';
 import {store} from './redux';
-import {BrowserRouter as Router} from 'react-router-dom';
+import Routes from './routes';
+import {BrowserRouter as Router, Route} from 'react-router-dom';
 import {VFXProvider} from 'react-vfx';
 
 import 'semantic-ui-css/semantic.min.css';
@@ -24,7 +25,7 @@ ReactDOM.render(
     <Provider store={store}>
       <Router>
         <ScrollToTop>
-          <Top.Main />
+          <Routes />
         </ScrollToTop>
       </Router>
     </Provider>

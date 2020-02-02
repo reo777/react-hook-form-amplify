@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import {Switch, Button, Input} from 'antd';
 import {useForm, Controller} from 'react-hook-form';
-import {Field, Formik} from 'formik';
 import {Auth} from 'aws-amplify';
 import faker from 'faker';
 
@@ -13,8 +12,8 @@ import './index.scss';
 
 const defaultValues = {main: ''};
 
-const Form = () => {
-  const {handleSubmit, control, reset, formState} = useForm({defaultValues});
+const Main = () => {
+  const {handleSubmit, control, reset} = useForm({defaultValues});
 
   const [isVisible, setIsVisible] = useState(false);
   return (
@@ -69,4 +68,4 @@ const Form = () => {
     </div>
   );
 };
-export default Form;
+export default Main;

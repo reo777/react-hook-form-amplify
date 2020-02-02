@@ -1,7 +1,15 @@
 import React from 'react';
+import {Route} from 'react-router-dom';
 
-const TopRoutes: React.FC = () => {
-  return <h1>hello</h1>;
+import {SignIn} from './../../pages';
+import paths from './../../config/paths';
+
+const SignInRoutes: React.FC = () => {
+  return (
+    <>
+      <Route path={paths.SignIn.main} component={SignIn.Main} />
+    </>
+  );
 };
 
-export default TopRoutes;
+export default SignInRoutes;

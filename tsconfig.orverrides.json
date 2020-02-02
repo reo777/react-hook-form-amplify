@@ -4,7 +4,7 @@
     "paths": {
       "@assets/*": ["../src/assets/*"],
       "@api": ["../src/api/index.ts"],
-      "@actions": ["../src/redux/actions/index.ts"],
+      "@actions": ["../src/redux/actions"],
       "@constants": ["../src/config/constants/index.ts"],
       "@paths": ["../src/config/paths/index.ts"],
       "@data": ["../src/data/index.ts"],

@@ -2,7 +2,7 @@ import {compose, bindActionCreators} from 'redux';
 import {withRouter} from 'react-router-dom';
 import {connect} from 'react-redux';
 
-import actions from '@actions';
+import actions from './../redux/actions';
 
 const mapStateToProps = (state: any) => ({
   me: state.me,

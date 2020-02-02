@@ -1,4 +1,5 @@
-import paths from '@paths';
+import paths from './../../config/paths';
+
 import {SignInRoutes, SignUpRoutes} from '../Routes';
 
 const routing: AppRoute[] = [

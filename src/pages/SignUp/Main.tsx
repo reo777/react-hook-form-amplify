@@ -1,8 +1,8 @@
 import {bindActionCreators, compose} from 'redux';
 import {connect} from 'react-redux';
 
-import {SignUp} from '@templates';
-import actions from '@actions';
+import {SignUp} from './../../templates';
+import actions from './../../redux/actions';
 
 const mapStateToProps = (state: any) => ({
   me: state.me,

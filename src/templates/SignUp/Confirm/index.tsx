@@ -10,11 +10,11 @@ import './index.scss';
 
 const defaultValues = {email: '', password: '', userName: ''};
 const SignupSchema = yup.object().shape({
-  email: yup.string().required('必須入力です'),
-  userName: yup.string().required('必須入力です'),
+  name: yup.string().required('必須入力です'),
+  code: yup.string().required('必須入力です'),
 });
 
-const SignIn = (props: any) => {
+const Confirm = (props: any) => {
   const {handleSubmit, control, formState, errors, setValue} = useForm({
     defaultValues,
     validationSchema: SignupSchema,
@@ -22,30 +22,26 @@ const SignIn = (props: any) => {
 
   return (
     <div className="a__signup">
-      <h1>Sign In</h1>
-      <form
-        onSubmit={handleSubmit(value =>
-          handlers.signIn(value, setValue, props.history)
-        )}
-      >
+      <h1>Confirm</h1>
+      <form onSubmit={handleSubmit(value => handlers.signUp(value, setValue))}>
         <div>
           <Controller
-            as={<TextField label="UseName" onChange={() => {}} />}
-            name="userName"
+            as={<TextField label="NAME" onChange={() => {}} />}
+            name="name"
             control={control}
           />
           <p>
-            <ErrorMessage errors={errors} name="userName" />
+            <ErrorMessage errors={errors} name="name" />
           </p>
         </div>
         <div>
           <Controller
-            as={<TextField label="Email" onChange={() => {}} />}
-            name="email"
+            as={<TextField label="CODE" onChange={() => {}} />}
+            name="code"
             control={control}
           />
           <p>
-            <ErrorMessage errors={errors} name="email" />
+            <ErrorMessage errors={errors} name="code" />
           </p>
         </div>
 
@@ -55,18 +51,18 @@ const SignIn = (props: any) => {
           loading={formState.isSubmitting}
           disabled={formState.isSubmitting}
         >
-          SIGN IN
+          SEND
         </Button>
         <Button
           loading={formState.isSubmitting}
           disabled={formState.isSubmitting}
-          onClick={() => props.history.push(paths.SignUp.main)}
+          onClick={() => props.history.push(paths.SignIn.main)}
         >
-          SIGN UP
+          SIGN IN
         </Button>
       </form>
     </div>
   );
 };
 
-export default SignIn;
+export default Confirm;

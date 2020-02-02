@@ -48,7 +48,7 @@
     "store": "^2.0.12",
     "typescript": "^3.7.5",
     "uuid": "^3.4.0",
-    "yup": "^0.28.0"
+    "yup": "^0.28.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -89,6 +89,7 @@
     "@types/stylelint": "^9.10.1",
     "@typescript-eslint/eslint-plugin": "^2.16.0",
     "@typescript-eslint/parser": "^2.16.0",
+    "@types/yup": "^0.26.27",
     "babel-plugin-lodash": "^3.3.4",
     "customize-cra": "^0.9.1",
     "eslint": "^6.8.0",

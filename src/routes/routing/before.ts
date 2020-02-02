@@ -11,7 +11,7 @@ const routing: AppRoute[] = [
   {
     path: paths.SignUp.main,
     component: SignUpRoutes,
-    exact: true,
+    exact: false,
   },
 ];
 

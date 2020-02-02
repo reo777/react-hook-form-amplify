@@ -1,0 +1,24 @@
+.a__signup {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin-top: 40px;
+  margin-left: 40px;
+  .Polaris-Button {
+    &.Polaris-Button--primary {
+      margin-top: 12px;
+    }
+  }
+  h1 {
+    font-weight: bold;
+  }
+  p {
+    color: red;
+  }
+  .Polaris-Banner {
+    p {
+      font-size: 16px;
+      color: black;
+    }
+  }
+}

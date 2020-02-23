@@ -9,6 +9,7 @@ import paths from './../../../config/paths';
 import './index.scss';
 
 const defaultValues = {email: '', password: '', userName: ''};
+
 const SignupSchema = yup.object().shape({
   email: yup.string().required('必須入力です'),
   password: yup.string().required('必須入力です'),

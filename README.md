@@ -1,1 +1,1 @@
-compairing React Hook Form and Formik
+React Hook Form with aws Amplify
